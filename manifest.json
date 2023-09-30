@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Login Test",
+    "version": "1.0",
+    "description": "This is my testing extension for auto login",
+    "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png",
+      "16": "icon16.png"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      },
+      "default_popup": "popup.html",
+      "content_scripts": [{
+        "js": ["temp.js"],
+        "matches": ["https://mccivcmm.com/login.php"]
+    }]
+    }
+  }
+  
